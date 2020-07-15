@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+@font-face {
+  font-family: "Colaborate-Thin";
+  src: url("//db.onlinewebfonts.com/t/3a8229b1585ebcf4a7206950df8f7649.eot");
+  src: url("//db.onlinewebfonts.com/t/3a8229b1585ebcf4a7206950df8f7649.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3a8229b1585ebcf4a7206950df8f7649.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3a8229b1585ebcf4a7206950df8f7649.woff") format("woff"), url("//db.onlinewebfonts.com/t/3a8229b1585ebcf4a7206950df8f7649.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3a8229b1585ebcf4a7206950df8f7649.svg#Colaborate-Thin") format("svg"); }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e0ecf3; }
+
+a {
+  text-decoration: none; }
+
+:-ms-input-placeholder {
+  visibility: hidden; }
+
+:focus, :active {
+  outline: none; }
+
+.container {
+  max-width: 968px;
+  width: 100%;
+  margin: 0 auto; }
+
+#Layer_1 {
+  fill: #62b1ce; }
+
+/*# sourceMappingURL=public-style.css.map */
