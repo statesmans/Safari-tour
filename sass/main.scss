@@ -542,12 +542,14 @@ option {
 
 .travel-map {
     background-color: #d6e6ef;
+    position: relative;
 }
 
 
 .travel-map {
 
     text-align: center;
+
     &__title {
         margin: 10px auto 0;
         font-size: 27px;
@@ -561,18 +563,28 @@ option {
     }
     // .travel-map__places-list
 
-    &__places-list {
-        
-    }
+    &__arrow {
+        position: absolute;
+        z-index: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 0 10px 148px;
+        border-color: transparent transparent transparent #f8f4f4;
+        transform: rotate(317deg); 
+    } 
 
     &__viewport {
-        background-image: linear-gradient(to top, rgba(207, 201, 201, 0.55) 0%, rgba(248, 244, 244, 0.55) 100%);
+        width: 235px;
     }
 
     &__list {
+        position: absolute;
+        top: 40px;
+        z-index: 2;
         max-width: 253px;
         padding: 23px 15px 20px 15px;
-        background-image: linear-gradient(to top, rgba(207, 201, 201, 0.55) 0%, rgba(248, 244, 244, 0.55) 100%);
+        background-image: linear-gradient(to top, rgba(207, 201, 201, 1) 0%, rgba(248, 244, 244, 1) 100%);
         border-radius: 8px;
         &--disable {
             display: none;
@@ -580,13 +592,15 @@ option {
         &--active {
             display: block;
         }
+
     }
     &__description {
         margin-top: 23px;
         font-size: 23px;
         color: #b2aaaa;
     }
-} 
+}
+
 
 #container-scroll {
     position: relative;
@@ -619,8 +633,5 @@ option {
         margin-right: 10px;
         margin-bottom: 20px;
     }
-    // .places-list__text-block
 
-    &__text-block {
-    }
 }
